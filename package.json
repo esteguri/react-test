@@ -16,7 +16,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test ",
     "eject": "react-scripts eject",
-    "test:jest": "set CI=true&&npm test"
+    "test:ci:windows": "set CI=true&&npm test",
+    "test:ci:linux": "CI=true npm test",
+    "build:ci:linux": "CI=true npm run build"
   },
   "eslintConfig": {
     "extends": [
